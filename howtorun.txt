@@ -1,0 +1,20 @@
+flex spring.l
+bison -d spring.y
+gcc lex.yy.c spring.tab.c main.c -o spring_compiler -lfl
+./spp spring.sp
+
+flex spring.l
+bison -d spring.y
+gcc lex.yy.c spring.tab.c main.c -o spring_compiler -lfl
+./spp test.sp
+
+
+this only support the following operaion:
+printing
+taking input 
+assignment
+arithmetic operation 
+logical operation
+relational opertion
+conditional
+comments
